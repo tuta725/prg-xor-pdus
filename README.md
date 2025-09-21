@@ -1,16 +1,19 @@
-# prg-xor-pdus
-“PRG-based XOR construction for pseudo-deterministic Unique-SAT experiments and CNF generation”
 # PRG-based XOR for Pseudo-Deterministic Unique-SAT (PDUS)
 
-This repository contains Python code for generating XOR clauses using a pseudorandom generator (PRG) to create candidate Unique-SAT instances and encode them into CNF format.
+This repository implements a PRG-based XOR construction to generate candidate Unique-SAT instances 
+with pseudo-deterministic isolation of solutions.
 
-## Features
-- Generate XOR clauses from a PRG seed.
-- Convert XOR clauses into CNF using Tseitin encoding.
-- Example CNF output ready for SAT solvers (DIMACS format).
-- Empirical evaluation of pseudo-deterministic isolation probability.
+## Requirements
+- Python 3.x
 
 ## Usage
-
 ```bash
-python prg_xor_generator.py
+python generate_xor.py
+```
+This will generate XOR clauses and CNF output.
+
+## Example
+Check `examples/example_run.py` for a usage example with sample output.
+
+## Output
+CNF files will be written to `output/` folder.
